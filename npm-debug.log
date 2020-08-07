@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'bugs', 'assignment5' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly fetchPackageMetaData assignment5
+5 silly fetchNamedPackageData assignment5
+6 silly mapToRegistry name assignment5
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry uri https://registry.npmjs.org/assignment5
+10 verbose request uri https://registry.npmjs.org/assignment5
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 5:36:18 PM
+13 verbose request id c9fe9119c1e3e6ef
+14 http request GET https://registry.npmjs.org/assignment5
+15 http 200 https://registry.npmjs.org/assignment5
+16 verbose headers { date: 'Fri, 07 Aug 2020 21:36:18 GMT',
+16 verbose headers   'content-type': 'application/json; charset=UTF-8',
+16 verbose headers   'transfer-encoding': 'chunked',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'set-cookie':
+16 verbose headers    [ '__cfduid=d6a754393191cc7e6a96dcab8faed97f21596836178; expires=Sun, 06-Sep-20 21:36:18 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+16 verbose headers   'cf-ray': '5bf421e34f53c50c-ORD',
+16 verbose headers   'cache-control': 'public, max-age=300',
+16 verbose headers   etag: 'W/"c3aff4dba6e7fb643d9b87b40f93ac3d"',
+16 verbose headers   'last-modified': 'Sat, 26 May 2018 17:28:57 GMT',
+16 verbose headers   vary: 'accept-encoding, accept',
+16 verbose headers   'cf-cache-status': 'MISS',
+16 verbose headers   'cf-request-id': '046c7382100000c50ce9041200000001',
+16 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 verbose headers   server: 'cloudflare',
+16 verbose headers   'content-encoding': 'gzip' }
+17 silly get cb [ 200,
+17 silly get   { date: 'Fri, 07 Aug 2020 21:36:18 GMT',
+17 silly get     'content-type': 'application/json; charset=UTF-8',
+17 silly get     'transfer-encoding': 'chunked',
+17 silly get     connection: 'keep-alive',
+17 silly get     'set-cookie':
+17 silly get      [ '__cfduid=d6a754393191cc7e6a96dcab8faed97f21596836178; expires=Sun, 06-Sep-20 21:36:18 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+17 silly get     'cf-ray': '5bf421e34f53c50c-ORD',
+17 silly get     'cache-control': 'public, max-age=300',
+17 silly get     etag: 'W/"c3aff4dba6e7fb643d9b87b40f93ac3d"',
+17 silly get     'last-modified': 'Sat, 26 May 2018 17:28:57 GMT',
+17 silly get     vary: 'accept-encoding, accept',
+17 silly get     'cf-cache-status': 'MISS',
+17 silly get     'cf-request-id': '046c7382100000c50ce9041200000001',
+17 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 silly get     server: 'cloudflare',
+17 silly get     'content-encoding': 'gzip' } ]
+18 verbose get saving assignment5 to /home/adaamhimself/.npm/registry.npmjs.org/assignment5/.cache.json
+19 silly bugs url https://www.npmjs.org/package/assignment5
+20 verbose stack Error: spawn xdg-open ENOENT
+20 verbose stack     at _errnoException (util.js:1022:11)
+20 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+20 verbose stack     at onErrorNT (internal/child_process.js:372:16)
+20 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+20 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+21 verbose cwd /mnt/c/users/adamm/documents/assignment5/src
+22 error Linux 4.4.0-18362-Microsoft
+23 error argv "/usr/bin/node" "/usr/bin/npm" "bugs" "assignment5"
+24 error node v8.10.0
+25 error npm  v3.5.2
+26 error path xdg-open
+27 error code ENOENT
+28 error errno ENOENT
+29 error syscall spawn xdg-open
+30 error enoent spawn xdg-open ENOENT
+31 error enoent spawn xdg-open ENOENT
+31 error enoent This is most likely not a problem with npm itself
+31 error enoent and is related to npm not being able to find a file.
+32 verbose exit [ 1, true ]
