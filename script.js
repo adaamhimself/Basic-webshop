@@ -422,3 +422,17 @@ function clearUpdates() {
     updatemain.remove();
   }
 }
+
+function validateEmail() {
+  var email = document.getElementById("subscribeEmail");
+  var emailvalue = email.value.trim();
+  emailvalue = emailvalue.toUpperCase();
+  var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var match = emailvalue.match(regex);
+  if (match == null) {
+    alert("Email must be formatted correctly.");
+    email.focus();
+    return false;
+  }
+  return true;
+}

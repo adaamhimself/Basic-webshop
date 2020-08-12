@@ -44,8 +44,8 @@
         <br>
         <div id=formblock>
           <span>Join our mailing list:</span>
-          <form id="subscribeemail" method="post" action="https://formspree.io/xgenqlqw">
-            <input name="email" type="email">
+          <form id="subscribeemail" method="post" onsubmit='return validateEmail()' action="https://formspree.io/xgenqlqw">
+            <input name="email" type="email" id="subscribeEmail">
             <button type="submit">subscribe</button>
           </form>
         </div>
