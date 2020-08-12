@@ -139,6 +139,9 @@ a{
 #updateDate{
 	font-size: 0.8em;
 }
+#subscribeemail{
+	font-size: 40%;
+}
 
 /* Sized to fit S10+ */
 @media only screen and (max-device-width: 1440px) {
