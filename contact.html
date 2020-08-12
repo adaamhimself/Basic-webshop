@@ -19,20 +19,21 @@
     </nav>
 
     <div id="contentwrapper">
-        <br/>
-        <form id="contactform" action="https://httpbin.org/post" method="post" onsubmit="return validateInquiry()">
+        <br>
+        <form id="contactform" name="contact" action="https://httpbin.org/post" method='post' onsubmit='return validateInput()'>
             
             <label for="inquiry-name">Name:</label>
             <br>
-            <input id="inquiry-name" type="text" size=49 required>
+            <input id="inquiry-name" type="text" size=49 name="inquiry-name">
             <br>
+            <span id="nameformat" style="display: none;">Name must contain only letters</span>
             <label for="inquiry-email">Email:</label>
             <br>
-            <input id="inquiry-email" type="email" size="49" required>
+            <input id="inquiry-email" name="inquiry-email" type="text" size="49">
             <br>
             <label for="inquiry-city">City:</label>
             <br>
-            <input list="inquiry-citylist" id="inquiry-city" name="inquiry-city" size="49" required />
+            <input list="inquiry-citylist" id="inquiry-city" name="inquiry-city" size="49" />
             <datalist id="inquiry-citylist">
                 <option value="Toronto">
                 <option value="Calgary">
@@ -52,7 +53,7 @@
             <br>
             <label for="inquiry-postalcode">Postal Code:</label>
             <br>
-            <input id="inquiry-postalcode" type="text" pattern="^[A-Za-z]\d[A-Za-z][\s|-]?\d[A-Za-z]\d$"  required>
+            <input id="inquiry-postalcode" type="text">
             <br>
             <label for="inquiry-issue">Inquiry type:</label>
             <ul>
@@ -63,14 +64,14 @@
             <br>
             <div id="orderproblemdiv" style="display: none;">
                 <label for="orderproblem">10 digit order number: </label>
-                <input type="text" id="orderproblem" pattern="^\d+$">
+                <input type="text" name="inquiry-ordernumber" id="inquiryOrderNo" pattern="^\d+$">
             </div>
             <br>
             <br>
             <label for="inquiry-text">Inquiry:</label><br>
-            <textarea id="inquiry-text" name="inquiry" rows="4" cols="50" required></textarea>
+            <textarea id="inquiry-text" name="inquiry" rows="4" cols="50" ></textarea>
             <br>
-            <input type="hidden" id="authorname" value="Adam Keeling">
+            <input type="hidden" name="authorname" id="authorname" value="Adam Keeling">
             <button id="submit">submit</button>
         </form>
 
@@ -83,15 +84,8 @@
         <span id="facebook"><a href="#">Facebook</a></span>
         <span id="contact"><a href="./contact.html">Contact</a></span>
         <br>
-        <div id="formblock">
-          <span>Join our mailing list:</span>
-          <form id="subscribeemail" method="post" action="#">
-            <input name="email" type="email">
-            <button type="submit">subscribe</button>
-          </form>
-        </div>
       </div>
     </footer>
-    <script src="validate.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
