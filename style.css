@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html, 
+body {
+  position: relative;
+  min-height: 100%;
+  width: 80%;
+  margin: auto;
+  font-family: 'Exo';
+  text-align: left;
+}
+#mainimg {
+  width: 100%;
+}
+#title {
+  background: #868181;
+  font-family: 'Open Sans';
+  color: black;
+  font-size: 2.5em;
+}
+#titleblock{
+  display: block;
+  float: center;
+}
+nav {
+  background: #c4c4c4;
+  margin: auto;
+  position: relative;
+}
+ul li {
+  display: inline-block;
+  text-transform: lowercase;
+  padding: 0.25em;
+  margin-top: 0.25em;
+  text-align: left;
+}
+#product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+  grid-gap: 5%;
+  color: black;
+}
+#product img {
+  width: 100%;
+  height: 100%;
+}
+#itemName {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+#heading {
+  padding: 0.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+  grid-gap: 5%;
+  color: black;
+}
+#contentwrapper {
+  margin-bottom: 10%;
+}
+footer {
+  position: relative;
+  margin-top: 10%;
+  padding: 0%;
+  left: 0;
+  bottom: -5%;
+  width: 100%;
+}
+#twitter {
+  float: right;
+  margin-left: 1%;
+}
+#facebook {
+  float: right;
+  margin-left: 1%;
+}
+#contact {
+  display: table-cell;
+  float: right;
+  vertical-align: top;
+}
+#author {
+  float: left;
+  vertical-align: middle;
+}
+#addToCart {
+  border-style: solid;
+  border-width: thin;
+  margin: 10%;
+  max-width: 100%;
+  text-align: center;
+}
+#addToCart:hover {
+  background: #c4c4c4;
+  text-decoration-color: black;
+}
+#addToCart span {
+  font-size: 80%;
+}
+a:visited {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#itemPrice {
+  margin: 5%;
+}
+#itemDescription {
+  float: left;
+  text-align: left;
+  margin-bottom: 5%;
+}
+#sub-title {
+  background: #868181;
+  color: black;
+  font-size: 0.9em;
+}
+#updates {
+  display: block;
+  color: black;
+  text-align: left;
+}
+#updateTitle {
+  font-weight: bold;
+}
+#updateDate {
+  font-size: 0.8em;
+}
+#formblock{
+  display: inline-block;
+  text-align: right;
+  margin-left: 60%;
+}
+#subscribeemail{
+  display: inline-block;
+}
+#contentwrapper{
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+#contactform{
+  display: inline-block;
+  text-align: left;
+}
+#submit{
+  float: right;
+}
+
+/* Sized to fit S10+ */
+@media only screen and (max-device-width: 1440px) {
+  html,
+  body {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  #title {
+    font-size: 600%;
+  }
+  #sub-title {
+    font-size: 200%;
+  }
+  ul li {
+    font-size: 300%;
+  }
+  #updateHeading {
+    font-size: 300%;
+  }
+  #updateTitle {
+    font-size: 300%;
+  }
+  #updateContent {
+    font-size: 300%;
+  }
+  #updateDate {
+    font-size: 150%;
+  }
+  #addToCart {
+    max-width: 80%;
+  }
+  #addToCart span {
+    font-size: 300%;
+  }
+  #itemName {
+    font-size: 300%;
+  }
+  #itemDescription {
+    font-size: 300%;
+    margin-bottom: 10%;
+  }
+  #itemPrice {
+    font-size: 300%;
+    margin: 5%;
+  }
+  #author {
+    font-size: 200%;
+  }
+  #contact {
+    font-size: 200%;
+  }
+  #twitter {
+    font-size: 200%;
+  }
+  #facebook {
+    font-size: 200%;
+  }
+}
+
+/* Sized to fit iPhone XR */
+@media only screen and (max-device-width: 828px) {
+  html,
+  body {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  #title {
+    font-size: 600%;
+  }
+  #sub-title {
+    font-size: 200%;
+  }
+  ul li {
+    font-size: 300%;
+  }
+  #updateHeading {
+    font-size: 300%;
+  }
+  #updateTitle {
+    font-size: 250%;
+  }
+  #updateContent {
+    font-size: 250%;
+  }
+  #updateDate {
+    font-size: 150%;
+  }
+}
